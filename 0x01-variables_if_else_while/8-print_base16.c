@@ -3,7 +3,7 @@
 /**
  * main - function execution begins
  * store_hex: A variable that stores the value of the hexadecimal
- * return: Always zero for success
+ * Return: Always zero for success
  */
 int main(void)
 {
