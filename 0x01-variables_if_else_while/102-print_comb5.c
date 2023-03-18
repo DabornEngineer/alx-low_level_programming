@@ -20,8 +20,6 @@ int main(void)
 			{
 				for (num_4 = 0; num_4 < 10; num_4++)
 				{
-					if (num_1 == num_2 && num_3 == num_4)
-						continue;
 					putchar(num_1 + '0');
 					putchar(num_2 + '0');
 					putchar(' ');
