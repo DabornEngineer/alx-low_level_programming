@@ -17,7 +17,7 @@ int main(void)
 		{
 			for (num_3 = num_1 + 2; num_3 < 10; num_3++)
 			{
-				if (num_3 < num_2)
+				if (num_3 < num_2 || num_2 == num_3)
 					continue;
 				putchar(num_1 + '0');
 				putchar(num_2 + '0');
