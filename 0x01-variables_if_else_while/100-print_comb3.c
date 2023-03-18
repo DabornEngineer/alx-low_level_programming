@@ -21,6 +21,7 @@ int main(void)
 			if (num_1 == 8 && num_2 == 9)
 				break;
 			putchar(',');
+			putchar(' ');
 		}
 	}
 	putchar('\n');
