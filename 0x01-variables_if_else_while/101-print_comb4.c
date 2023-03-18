@@ -5,6 +5,7 @@
  * num_1: stores the value of the first digit
  * num_2: stores the value of the second digit
  * num_3: stores the value of the third digit
+ * Return: always zero for success
  */
 int main(void)
 {
@@ -16,6 +17,8 @@ int main(void)
 		{
 			for (num_3 = num_1 + 2; num_3 < 10; num_3++)
 			{
+				if (num_3 < num_2)
+					continue;
 				putchar(num_1 + '0');
 				putchar(num_2 + '0');
 				putchar(num_3 + '0');
