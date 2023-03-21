@@ -1,5 +1,4 @@
 #include "main.h"
-#include <math.h>
 
 /**
  * _abs - prints the basolute value of a number
@@ -8,5 +7,10 @@
  */
 int _abs(int n)
 {
-	return (sqrt(n * n));
+	if (n > 0)
+		return (n);
+	else if (n == 0)
+		return (0);
+	else
+		return (n * (-1));
 }
