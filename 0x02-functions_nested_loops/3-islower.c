@@ -13,12 +13,8 @@ int _islower(int c)
 	for (lowercase = 'a'; lowercase <= 'z'; lowercase++)
 	{
 		if (c == lowercase)
-		{
 			return (1);
-		}
 		else
-		{
 			return (0);
-		}
 	}
 }
