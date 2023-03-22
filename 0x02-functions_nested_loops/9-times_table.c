@@ -6,7 +6,7 @@
  * multi2: value for multiplication
  * result: the answer of the multiplication
  */
-void times_table(void);
+void times_table(void)
 {
 	int multi1, multi2;
 	int result;
