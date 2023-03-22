@@ -10,17 +10,25 @@ void times_table(void)
 {
 	int multi1, multi2;
 	int result;
+	int div, rem;
 
 	for (multi1 = 0; multi1 < 10; multi1++)
 	{
 		for (multi2 = 0; multi2 < 10; multi2++)
 		{
 			result = multi1 * multi2;
-			_putchar(result);
-			_putchar(',');
-			_putchar('\n');
+			if (result > 9)
+			{
+				rem = result % 10;
+				div = result / 10;
+				_putchar(div + '0');
+				_putchar(rem + '0');
+			}
+			if (result < 10)
+				_putchar(result + '0');
 			if (multi2 == 9)
-				_putchar('\t');
+				_putchar('\n');
+			_putchar(',');
 		}
 	}
 }
