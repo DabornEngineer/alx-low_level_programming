@@ -16,11 +16,11 @@ void times_table(void)
 		for (multi2 = 0; multi2 < 10; multi2++)
 		{
 			result = multi1 * multi2;
-			_putchar(result + '0');
+			_putchar(result);
 			_putchar(',');
 			_putchar('\n');
 			if (multi2 == 9)
-				_putchar('\n');
+				_putchar('\t');
 		}
 	}
 }
