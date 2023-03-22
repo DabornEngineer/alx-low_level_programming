@@ -27,8 +27,12 @@ void times_table(void)
 			if (result < 10)
 				_putchar(result + '0');
 			if (multi2 == 9)
+			{
 				_putchar('\n');
+				continue;
+			}
 			_putchar(',');
+			_putchar('\n');
 		}
 	}
 }
