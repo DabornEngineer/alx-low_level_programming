@@ -2,7 +2,7 @@
 
 /**
  * print_diagonal - function tha prints diagonal
- * @c: the input
+ * @n: the input
  */
 
 void print_diagonal(int n)
@@ -23,8 +23,10 @@ void print_diagonal(int n)
 				{
 					_putchar('\\');
 				}
-				else
+				else if (j < i)
+				{
 					_putchar(' ');
+				}
 			}
 			_putchar('\n');
 		}
