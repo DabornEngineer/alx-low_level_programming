@@ -8,13 +8,12 @@
 void print_rev(char *s)
 {
 	int c = 0;
-	int get_s = 1;
 
 	while (*(s + c) != '\0')
 	{
-		get_s = c++;
+		c++;
 	}
-	for (c = get_s; c >= 0; c--)
+	for (c -= 1; c >= 0; c--)
 	{
 		_putchar(*(s + c));
 	}
