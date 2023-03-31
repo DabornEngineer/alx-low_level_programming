@@ -18,10 +18,8 @@ void print_array(int *a, int n)
 			continue;
 		else
 		{
-			_putchar(',');
-			_putchar(' ');
+			printf(", ");
 		}
 	}
-	_putchar('\n');
-
+	printf("\n");
 }
