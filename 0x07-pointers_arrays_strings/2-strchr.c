@@ -12,7 +12,7 @@ char *_strchr(char *s, char c)
 	int count = 0;
 	int loop = 0;
 
-	while (*(s + count) != '\0')
+	while (*(s + count))
 	{
 		count++;
 	}
