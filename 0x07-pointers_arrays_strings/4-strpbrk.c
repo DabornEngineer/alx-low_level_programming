@@ -1,10 +1,11 @@
 #include "main.h"
-#include <typedef.h>
+#include <stddef.h>
 
 /**
  * _strpbrk - the function name
  * @s: the string
  * @accept: the string
+ * Return: the string
  */
 
 char *_strpbrk(char *s, char *accept)
@@ -21,7 +22,7 @@ char *_strpbrk(char *s, char *accept)
 		for (j = 0; j <= len_acc; j++)
 		{
 			if (*(s + i) == *(accept + j))
-					return (s + i);
+				return (s + i);
 		}
 	}
 	return (NULL);
