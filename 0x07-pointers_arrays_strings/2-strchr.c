@@ -16,7 +16,7 @@ char *_strchr(char *s, char c)
 	{
 		count++;
 	}
-	for (loop = 0; loop < count; loop++)
+	for (loop = 0; loop <= count; loop++)
 	{
 		if (c == *(s + loop))
 			return (s + loop);
